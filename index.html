@@ -1,149 +1,85 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Untitled Document</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link type="text/css" href="resources/css/reset.css" rel="Stylesheet" />
-    <link type="text/css" href="resources/css/default.css" rel="Stylesheet" />
-    <link rel="shortcut icon" href="resources/images/favicon_play.ico" />
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet'>
-
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>page1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/page1/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/page1/data.js"></script>
     <script type="text/javascript">
-        if (location.href.toString().indexOf('file://localhost/') == 0) {
-            location.href = location.href.toString().replace('file://localhost/', 'file:///');
-        }
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
+  </head>
+  <body>
+    <div id="base" class="">
 
-    <!--<link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/handoff.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/codemirror.css" />-->
-</head>
-<body scroll="no" class="hashover" style="overflow: hidden;">
-    <div id="topPanel">
-        <div id="interfaceControlFrame">
-            <div id="interfaceControlFrameLeft">
-                <div id="interfaceControlFrameMinimizeContainer">
-                    <a title="Collapse" id="interfaceControlFrameMinimizeButton">
-                        <div id="minimizeArrow" class="minimizeButtonHover minimizeIcon"></div>
-                        <div id="minimizeX" class="minimizeButton minimizeIcon"></div>
-                    </a>
-                </div>
-                <div id="interfaceControlFrameCloseContainer">
-                    <a title="Close" id="interfaceControlFrameCloseButton">CLOSE</a>
-                </div>
-
-                <div id="sitemapControlFrameContainer" title="Project Pages">
-                    <div id="projectControlFrameHeaderContainer">
-                        <ul id="projectControlFrameHeader"></ul>
-                    </div>
-                    
-                    <div id="interfacePageNameContainer">
-                        <div id="interfacePageNameButton" class='pageNameHeader'>
-                            &nbsp;
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="interfaceAdaptiveViewsContainer" title="Adaptive Views">
-                    <div id="interfaceAdaptiveViewsIconButton">&nbsp;</div>
-                    <div id="interfaceAdaptiveViewsButton" class='adaptiveViewHeader'>
-                        &nbsp;
-                    </div>
-                    <div id="adaptiveViewsDropdown" class="caret"></div>
-                </div>
-            </div>
-            
-            <div id="interfaceControlFrameContainer">
-                <div id="handoffControlFrameHeaderContainer">
-                    <ul id="handoffControlFrameHeader"></ul>
-                </div>
-                <div id="interfaceControlFrameLogoContainer">
-                    <div id="previewNotice">
-                        Local Preview
-                    </div>
-                </div>
-            </div>
-
-            <div id="interfaceControlFrameRight">
-                <div id="publishContainer">
-                    <a id="publishButton">Share Prototype</a>
-                </div>
-                
-                <div id="inspectControlFrameHeaderContainer">
-                    <ul id="inspectControlFrameHeader">
-                        <li id="overflowBtn">
-                            <a id="overflowMenuButton" title="View Options"></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="separatorContainer">
-                    <div class="separator"></div>
-                </div>
-
-                <div id="overflowMadeWith"><a href="https://www.axure.com" id="axureLogo" target="_blank"></a></div>
-
-            </div>
-
+      <!-- Unnamed (矩形) -->
+      <div id="u0" class="ax_default _一级标题">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text ">
+          <p><span style="text-decoration:none;">章鱼小宝宝的开心日记</span></p>
         </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1" class="ax_default box_1">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2" class="ax_default label">
+        <div id="u2_div" class=""></div>
+        <div id="u2_text" class="text ">
+          <p><span style="text-decoration:none;">&nbsp;&nbsp;&nbsp; “提问！</span></p><p><span style="text-decoration:none;">&nbsp;&nbsp;&nbsp; 世界上最可爱的小可爱是谁？”</span></p><p><span style="text-decoration:none;"><br></span></p><p><span style="text-decoration:none;">&nbsp;&nbsp;&nbsp; 空荡的山谷里突然冒出了这样一个声音。好像是大山向这山谷中的生灵提出的疑问。听到这个问题，大山里的小草和花儿们，郁郁葱葱的大树们，还有树上跳来跳去的小松鼠，树下钻进草丛里的小狐狸，还有草丛中蹦蹦跳跳的小兔子，都停下了手中正在干的事情。它们齐声回答道：“那当然是章鱼小宝贝！”。</span></p><p><span style="text-decoration:none;">&nbsp;&nbsp;&nbsp; 没错！世界上最可爱的小可爱，就是我们今天的主人公，章鱼小宝宝。此刻，章鱼小宝宝正在山谷间的溪涧旁玩耍，听着风刮过树丛声传来一阵哗啦啦的声音，还有树上松鼠仿佛在窃窃私语的声音。她不懂它们在说什么，虽然大家都知道，章鱼宝宝是世界上最可爱的小可爱，但是在章鱼宝宝听来，那只是他们每天都会发出的正常的声音。不过，听了这大自然的声音，她还是觉得很开心。</span></p><p><span style="text-decoration:none;">&nbsp;&nbsp;&nbsp; 这一天阳光非常的明媚，章鱼小宝宝在山谷间快乐地玩耍，她要去大山里找她的好朋友小宇宝宝。她和小宇约好了，好一起吃好吃的，一起去山谷里探险，到了晚上，还要一起爬上树梢，看星星和月亮爬上来，在夜空下演一场好戏。小宇是章鱼宝宝最好的好朋友，她非常喜欢他，因此她还特意亲手做了好吃的芒果千层饼，准备送给小宇宝宝吃。</span></p><p><span style="text-decoration:none;">&nbsp;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3" class="ax_default button">
+        <div id="u3_div" class=""></div>
+        <div id="u3_text" class="text ">
+          <p><span style="text-decoration:none;">下一页</span></p>
+        </div>
+      </div>
     </div>
-    <div id="popupContainer">
-        <div id='interfaceAdaptiveViewsListContainer'>
-        </div>
-
-        <div id='interfaceScaleListContainer'>
-        </div>
-
-        <div id='accountLoginContainer'>
-        </div>
-
-        <div id='overflowMenuContainer'>
-        </div>
-    </div>
-    <div id="outerContainer">
-        <div id="clippingBounds">
-            <div id="clippingBoundsScrollContainer"></div>
-        </div>
-
-        <div id="mHideSidebar"></div>
-        <div id="lsplitbar" class="splitbar"></div>
-
-        <div id="mainPanel">
-            <div id="mainPanelContainer" style="position: relative; width:100%; height: 100%;">
-                <div id="clipFrameScroll" style="position: relative; width:100%; height: 100%; background-color: #ffffff;">
-                    <iframe id="mainFrame" name="mainFrame" width="100%" height="100%" src="about:blank" frameborder="0" style="display: block;position:absolute;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div id="rsplitbar" class="splitbar"></div>
-
-    </div>
-
-    <div id="maximizePanelContainer" class="maximizePanelContainer">
-        <div id="maximizePanelOver">
-            <div id="maximizePanel" title="Expand" class="maximizePanelOver">
-                <div id="maximizeButton" class="maximizeButton maximizeIcon"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="mobileControlFrameContainer"></div>
-
-<!-- 9.0.0.3646 -->
-<script src="resources/scripts/jquery-3.2.1.min.js"></script>
-<script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
-<script src="resources/scripts/axutils.js"></script>
-<script src="resources/scripts/messagecenter.js"></script>
-<script src="resources/scripts/player/axplayer.js"></script>
-<script src="resources/scripts/player/init.js"></script>
-
-
-</body>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
 </html>
